@@ -1,0 +1,322 @@
+@import 'fonts.css';
+:root{
+    --brown: #998675;
+}
+
+/* header */
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: #232323;
+    position: relative;
+}
+/* header-menu */
+.header-menu{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header-menu .navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.header-menu .navbar-brand span{
+    font-size: 34px;
+    font-family: 'raleway-r';
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.header-menu .navbar{
+    padding: 39px 0;
+}
+.header-menu .menu-list{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header-menu .menu-list li a{
+    font-size: 14px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-family: 'mont-l';
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-menu .menu-list li a:hover{
+    color: #c7b299;
+}
+.header-menu .navbar-toggler{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 5px 0 #ffffff;
+    padding: 0;
+    position: relative;
+    justify-content: center;
+    outline: none;
+}
+.header-menu .navbar-toggler span{
+    width: 80%;
+    height: 3px;
+    box-shadow: inset 0 0 2px 0 #ffffff;
+    display: flex;
+}
+.header-menu .navbar-toggler span::before{
+    width: 80%;
+    height: 3px;
+    box-shadow: inset 0 0 2px 0 #ffffff;
+    position: absolute;
+    content: ' ';
+    top: 10px;
+    left: auto;
+}
+.header-menu .navbar-toggler span::after{
+    width: 80%;
+    height: 3px;
+    box-shadow: inset 0 0 2px 0 #ffffff;
+    position: absolute;
+    content: ' ';
+    bottom: 10px;
+    left: auto;
+}
+/* haeder-carousel */
+.header-carousel,
+.header-carousel .carousel,
+.header-carousel .carousel-inner,
+.header-carousel .carousel-item{
+    width: 100%;
+    height: 100vh;
+}
+.header-carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+.header-carousel .carousel-caption{
+   width: 100%;
+   height: 100%;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.header-carousel .carousel-caption h2,
+.header-carousel .carousel-caption h3,
+.header-carousel .carousel-caption p{
+    max-width: 700px;
+    padding: 0 50px;
+}
+.header-carousel .carousel-caption h3{
+    font-size: 36px;
+    font-family: 'raleway-m';
+}
+.header-carousel .carousel-caption h2{
+    font-size: 52px;
+    font-family: 'raleway-exb';
+}
+.header-carousel .carousel-caption p{
+    font-size: 16px;
+    font-family: 'mont-l';
+    margin-bottom: 30px;
+}
+.btn-start{
+    padding: 21px 37px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: var(--brown);
+    border-bottom: 3px solid #736357;
+    font-size: 14px;
+    line-height: 11px;
+    font-family: 'raleway-exb';
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.btn-start:hover{
+    text-decoration: none;
+    color: white;
+}
+.header-carousel .carousel-indicators li{
+    width: 11px;
+    height: 11px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: none;
+}
+.header-carousel .carousel-indicators li.active{
+    background: transparent;
+    border: 3px solid #d3c1ad;
+}
+.header-carousel .carousel-indicators {
+    align-items: center;
+    margin-bottom: 40px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    z-index: 10;
+    font-size: 74px;
+    color: white;
+}
+/* uslugi */
+.uslugi{
+    width: 100%;
+    background: white;
+    padding: 50px 0;
+}
+.uslugi-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+}
+.uslugi-icon{
+    color: #555555;
+    font-size: 50px;
+}
+.uslugi-item h4{
+    font-size: 22px;
+    font-family: 'raleway-sb';
+    color: #555555;
+    margin-top: 25px;
+}
+.uslugi-item p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #8c8c8c;
+    font-family: 'mont-l';
+    padding: 20px 0 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.uslugi-item p::before{
+    position: absolute;
+    content: ' ';
+    background: #f1eee9;
+    width: 70px;
+    height: 3px;
+    bottom: 0;
+    left: auto;
+}
+.uslugi-item:hover p::before{
+    background: #c7b299;
+}
+.uslugi-item:hover .uslugi-icon,
+.uslugi-item:hover h4{
+    color: #c7b299;
+}
+/* content slogan */
+.ideas{
+    width: 100%;
+    background: #fbfafb;
+    padding-top: 45px;
+}
+.content-slogan{
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+}
+.content-slogan h3{
+    font-size: 30px;
+    color: #555555;
+    font-family: 'raleway-sb';
+    margin-bottom: 20px;
+}
+.content-slogan p{
+    font-size: 16px;
+    font-family: 'mont-l';
+    color: #8c8c8c;
+}
+.ideas-content{
+    width: 100%;
+    min-height: 490px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.ideas-item{
+    position: absolute;
+    width: 64.5%;
+    bottom: 0;
+}
+.ideas-item img{
+    width: 100%;
+    height: 100%;
+}
+.ideas-item:nth-of-type(1){
+    left: 0;
+}
+.ideas-item:nth-of-type(2){
+    right: 0;
+}
+.ideas-item:nth-of-type(3){
+    right: auto;
+}
+/* ideas-gradient */
+.ideas-gradient{
+    padding: 48px 0;
+    width: 100%;
+    background: linear-gradient(90deg,#211b19, #4e3427);
+}
+.ideas-gradient .gradient-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.gradient-text h4{
+    font-size: 28px;
+    color: white;
+    font-family: 'raleway-r';
+}
+.gradient-text h4 span{
+    color: #c7b299;
+}
+.gradient-text p{
+    font-size: 18px;
+    font-family: 'mont-l';
+    color: #615855;
+}
+
+
+
+
+
+/* media */
+@media (max-width: 1199.98px) {
+    .header-menu .navbar-toggler{
+        display: flex;
+    }
+    .header-menu .menu-list {
+        justify-content: center;
+        height: 100%;
+    }
+    .header-menu .menu-list li a{
+        justify-content: flex-start;
+        padding: 5px 15px;
+    }
+    .header-menu{
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
+@media(max-width: 991.98px){
+    .ideas-gradient .gradient-btn{
+        justify-content: center;
+    }
+    .gradient-text{
+        text-align: center;
+    }
+    .ideas-content{
+        min-height: 310px;
+    }
+}
